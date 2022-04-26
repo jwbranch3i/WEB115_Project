@@ -12,28 +12,49 @@
          font-size: 30px;
       }
 
+      .subHead{
+         border-style: solid;
+         padding: 10px;
+         margin: 0px;
+      }
+
       .writerID {
          text-align: right;
-         font-size:medium;
+         font-size: medium;
          margin-top: 0px;
          margin-bottom: 0px;
          margin-right: 5px;
       }
-      mark{
+
+      mark {
          background-color: blue;
          color: white;
       }
    </style>
+    
    <div class="header">
       <h1 style="text-decoration:underline;">Build Your Resume</h1>
-      <p>Enter your information below and press <mark>BUILD</mark> to create your resume</p><br>
+      <p>Enter your information below and press <mark>Create Resume</mark> to build your resume</p><br>
       <p class="writerID">Written by John Branch</p>
       <p class="writerID">WEB-115 Section 0004</p>
    </div>
 </head>
 
 <body>
-   <script></script>
+   <script src="projectJS.js"></script>
+   <h1>Personal Info</h1>
+
+   <p class="subHead">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      Address:<br>
+   </p>
+
+   <h1><u>Skill</u></h1>
+   <h1><u>Tech Skills</u></h1>
+   <h1><u>Educatio:</u></h1>
+   <h1><u>Work Experience</u></h1>
+   <h1><u>References</u></h1>
 </body>
 
 </html>
