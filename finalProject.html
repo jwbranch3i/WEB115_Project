@@ -12,7 +12,7 @@
          font-size: 30px;
       }
 
-      .subHead{
+      .subHead {
          border-style: solid;
          padding: 10px;
          margin: 0px;
@@ -31,7 +31,7 @@
          color: white;
       }
    </style>
-    
+
    <div class="header">
       <h1 style="text-decoration:underline;">Build Your Resume</h1>
       <p>Enter your information below and press <mark>Create Resume</mark> to build your resume</p><br>
@@ -42,40 +42,94 @@
 
 <body>
    <script src="projectJS.js"></script>
-   <h1>Personal Info</h1>
 
+   <h1>Personal Info</h1>
    <p class="subHead">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br><br>
       <u>Address</u>:<br><br>
 
-         <label for="street">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Street:</label>
-         <input type="text" id="street" name="street"><br><br>
+      <label for="street">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Street:</label>
+      <input type="text" id="street" name="street"><br><br>
 
-         <label for="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:</label>
-         <input type="text" id="city" name="city"><br><br>
+      <label
+         for="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:</label>
+      <input type="text" id="city" name="city"><br><br>
 
-         <label for="state">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State:</label>
-         <input type="text" id="state" name="state">
+      <label
+         for="state">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State:</label>
+      <input type="text" id="state" name="state">
 
-         <label for="zip">&nbsp;&nbsp;&nbsp;Zip:</label>
-         <input type="text" id="zip" name="zip"><br><br>
+      <label for="zip">&nbsp;&nbsp;&nbsp;Zip:</label>
+      <input type="text" id="zip" name="zip"><br><br>
 
-         <label for="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:</label>
-         <input type="text" id="phone" name="phone"><br><br>
+      <label for="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:</label>
+      <input type="text" id="phone" name="phone"><br><br>
 
-         <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email:</label>
-         <input type="text" id="email" name="email"><br><br>
+      <label
+         for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email:</label>
+      <input type="text" id="email" name="email"><br><br>
 
-         <label for="portFolio">Portfolio Link:</label>
-         <input type="text" id="portFolio" name="portFolio"><br><br>
+      <label for="portFolio">Portfolio Link:</label>
+      <input type="text" id="portFolio" name="portFolio"><br><br>
    </p>
 
-   <h1><u>Skill</u></h1>
-   <h1><u>Tech Skills</u></h1>
-   <h1><u>Educatio:</u></h1>
+   <h1><u>Skills</u></h1>
+   <p class="subHead">
+      Enter your skill set<br><br>
+
+      <input type="text" id="skill1" name="skill1"><br><br>
+      <input type="text" id="skill2" name="skill2"><br><br>
+      <input type="text" id="skill3" name="skill3"><br><br>
+   </p>
+
+   <h1><u>Technical Skills</u></h1>
+   <p class="subHead">
+      Enter your technical Skills<br><br>
+
+      <input type="text" id="tskill1" name="tskill1"><br><br>
+      <input type="text" id="tskill2" name="tskill2"><br><br>
+   </p>
+
+   <h1><u>Education</u></h1>
+   <p class="subHead">
+      <label for="education">Enter your education background:</label><br><br>
+      <textarea id="education" name="education" rows="8" cols="50"></textarea>
+   </p>
+
    <h1><u>Work Experience</u></h1>
+   <p class="subHead">
+      Enter your most recent employment experience:<br><br>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate">
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate"><br><br>
+
+      
+      <label for="work">Employment Details:</label>
+      <textarea id="work" name="work" rows="8" cols="50"></textarea>
+
+
+
+      <br><br>Enter your next employment experience:<br><br>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate">
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate"><br><br>
+
+      <label for="work">Employment Details:</label>
+      <textarea id="work" name="work" rows="8" cols="50"></textarea>
+
+   </p>
+
    <h1><u>References</u></h1>
+   <p class="subHead">
+   </p>
+
 </body>
 
 </html>
