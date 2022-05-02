@@ -37,3 +37,12 @@ textarea{
    font-size: 16px;
    margin: 4px 2px;
 }
+
+/*******************************/
+/* Resume CSS                  */
+/*******************************/
+.r_header {
+   text-align: center;
+   background-color: white;
+   color: black;
+}
