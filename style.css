@@ -1,0 +1,28 @@
+.header {
+   text-align: center;
+   background-color: lightgray;
+   color: blue;
+   font-size: 30px;
+}
+
+.subHead {
+   border-style: solid;
+   padding: 10px;
+   margin: 0px;
+}
+
+.writerID {
+   text-align: right;
+   font-size: medium;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: 5px;
+}
+
+mark {
+   background-color: blue;
+   color: white;
+}
+
+textarea{
+   vertical-align: top;

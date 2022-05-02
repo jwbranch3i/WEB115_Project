@@ -4,33 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <title>WEB-115 Final Project</title>
-   <style>
-      .header {
-         text-align: center;
-         background-color: lightgray;
-         color: blue;
-         font-size: 30px;
-      }
-
-      .subHead {
-         border-style: solid;
-         padding: 10px;
-         margin: 0px;
-      }
-
-      .writerID {
-         text-align: right;
-         font-size: medium;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         margin-right: 5px;
-      }
-
-      mark {
-         background-color: blue;
-         color: white;
-      }
-   </style>
+   <link rel="stylesheet" src="style.css">
 
    <div class="header">
       <h1 style="text-decoration:underline;">Build Your Resume</h1>
@@ -99,35 +73,40 @@
 
    <h1><u>Work Experience</u></h1>
    <p class="subHead">
+
+      <!--work experience 1-->
       Enter your most recent employment experience:<br><br>
-
-      <label for="startDate">Start Date:</label>
+     <label for="startDate">Start Date:</label>
       <input type="date" id="startDate" name="startDate">
-
       <label for="endDate">End Date:</label>
       <input type="date" id="endDate" name="endDate"><br><br>
+      <label for="work1">Employment Details:</label>
+      <textarea id="work1" name="work" rows="8" cols="50"></textarea>
 
-      
-      <label for="work">Employment Details:</label>
-      <textarea id="work" name="work" rows="8" cols="50"></textarea>
-
-
-
+      <!--work experience 2-->
       <br><br>Enter your next employment experience:<br><br>
+      <label for="startDate2">Start Date:</label>
+      <input type="date" id="startDate2" name="startDate2">
+      <label for="endDate2">End Date:</label>
+      <input type="date" id="endDate2" name="endDate2"><br><br>
+      <label for="work2">Employment Details:</label>
+      <textarea id="work2" name="work2" rows="8" cols="50"></textarea>
 
-      <label for="startDate">Start Date:</label>
-      <input type="date" id="startDate" name="startDate">
-
-      <label for="endDate">End Date:</label>
-      <input type="date" id="endDate" name="endDate"><br><br>
-
-      <label for="work">Employment Details:</label>
-      <textarea id="work" name="work" rows="8" cols="50"></textarea>
+      <!--work experience 3-->
+      <br><br>Enter your next employment experience:<br><br>
+      <label for="startDate3">Start Date:</label>
+      <input type="date" id="startDate3" name="startDate3">
+      <label for="endDate3">End Date:</label>
+      <input type="date" id="endDate3" name="endDate3"><br><br>
+      <label for="work3">Employment Details:</label>
+      <textarea id="work3" name="work3" rows="8" cols="50"></textarea>
 
    </p>
 
    <h1><u>References</u></h1>
    <p class="subHead">
+      <label for="references">Enter your Business references:</label><br><br>
+      <textarea id="references" name="references" rows="8" cols="50"></textarea>
    </p>
 
 </body>
