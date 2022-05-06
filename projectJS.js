@@ -1,3 +1,12 @@
+function fixDate(theDate){
+   let newDate = "";
+
+   newDate = theDate.substring(5, 7) + "\\";
+   newDate += theDate.substring(8) + "\\";
+   newDate += theDate.substring(0, 4);
+
+   return newDate;
+}
 
 function doResume(){
    var myPage;
@@ -11,11 +20,19 @@ function doResume(){
    let portFolio = document.getElementById("portFolio").value;
 
    let objective = document.getElementById("objective").value;
+   let objDetail = document.getElementById("objDetail").value;
    let education = document.getElementById("education").value;
 
    let work1 = document.getElementById("work1").value;
    let work2 = document.getElementById("work2").value;
    let work3 = document.getElementById("work3").value;
+
+   let startDate1 = document.getElementById("startDate1").value;
+   let endDate1 = document.getElementById("endDate1").value;
+   let startDate2 = document.getElementById("startDate2").value;
+   let endDate2 = document.getElementById("endDate2").value;
+   let startDate3 = document.getElementById("startDate3").value;
+   let endDate3 = document.getElementById("endDate3").value;
 
    let skill1 = document.getElementById("skill1").value;
    let skill2 = document.getElementById("skill2").value;
@@ -36,41 +53,47 @@ function doResume(){
 
    myPage += "<div class=\"r_header\">";
    myPage += "<h1><b>" + name + "</b></h1>";
-   myPage += "_______________<br><br>***resume objective***";
+   myPage += "_______________<br><br>" ;
+   myPage += objective;
    myPage += "<hr></div></head>";
 
    myPage += "<body>";
 
    myPage += "<div class=\"";
-   myPage += " column left\" ;>";
-   myPage += "<center><b>RESUME OBJECTIVE</b></center><br><br>";
-   myPage += objective;
+   myPage += "column left\" ;>";
+   myPage += "<center><b><u>RESUME OBJECTIVE</u></b></center><br>";
+   myPage += objective + ": <br>" + objDetail;
 
    myPage += "<br><br><br>";
-   myPage += "<center><b>Education</b></center><br>";
+   myPage += "<center><b><u>Education</u></b></center><br>";
    myPage += "School:<br>";
    myPage += education;
 
    myPage += "<br><br><br>";
-   myPage += "<center><b>Work Experience</b></center><br>";
+   myPage += "<center><b><u>Work Experience</u></b></center><br>";
    myPage += "Company:<br>";
-   myPage += "startdate - enddate<br>";
+   myPage += fixDate(startDate1) + " - " + fixDate(endDate1) + "<br>";
    myPage += work1;
 
+   if (work2 !== ""){
    myPage += "<br><br><br>";
-   myPage += "<center><b>Work Experience</b></center><br>";
+   myPage += "<center><b><u>Work Experience 2</u></b></center><br>";
    myPage += "Company:<br>";
-   myPage += "startdate - enddate<br>";
+   myPage += fixDate(startDate2) + " - " + fixDate(endDate2) + "<br>";
    myPage += work2;
+   }
    
+   if (work3 !== ""){
    myPage += "<br><br><br>";
-   myPage += "<center><b>Work Experience</b></center><br>";
+   myPage += "<center><b><u>Work Experience 3</u></b></center><br>";
    myPage += "Company:<br>";
    myPage += "startdate - enddate<br>";
+   myPage += fixDate(startDate3) + " - " + fixDate(endDate3) + "<br>";
    myPage += work3;
+   }
    
    myPage += "<br><br><br>";
-   myPage += "<center><b>References</b></center><br>";
+   myPage += "<center><b><u>References</u></b></center><br>";
    myPage += "Name:<br>";
    myPage += references + "</div>";
 
