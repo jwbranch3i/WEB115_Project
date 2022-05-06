@@ -46,3 +46,33 @@ textarea{
    background-color: white;
    color: black;
 }
+
+body {
+   font-size:12pt;
+   font-family:verdana;
+   max-width: 9in;
+}
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Create two unequal columns that floats next to each other */
+ .column {
+   float: left;
+   padding: 10px;
+ }
+ 
+ .left {
+   width: 75%;
+ }
+ 
+ .right {
+   width: 25%;
+ }
+ 
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
